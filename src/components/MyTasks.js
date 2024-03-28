@@ -1,8 +1,8 @@
-import React, { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import delImg from "../assets/delete.png";
 import updateImg from "../assets/update.png";
 
-export default function MyTasks({ list,setNewValue, incrementCount, counter, checkedTasks, onCheckChange, deleteTask, updateTask, editIndex, newValue, setEditIndex }) {
+export default function MyTasks({ list, setNewValue, incrementCount, counter, checkedTasks, onCheckChange, deleteTask, updateTask, editIndex, newValue, setEditIndex }) {
 
     useEffect(() => {
         console.log("rendering...");
@@ -52,7 +52,7 @@ export default function MyTasks({ list,setNewValue, incrementCount, counter, che
                     }
                     {/* Actions */}
                     <div className='flex items-center space-x-6 w-[340px] lg:w-[290px]'>
-                    <div>{counter[index] !== 0 ? counter[index] : ''}</div>
+                        <div>{counter[index] !== 0 ? counter[index] : ''}</div>
                         {/* delete */}
                         <button>
                             <img

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import AddToList from './AddToList';
-import Header from './Header';
-import MyTasks from './MyTasks';
+import AddToList from '../components/AddToList';
+import Header from '../components/Header';
+import MyTasks from '../components/MyTasks';
 
 export default function TodoList() {
     const [list, setList] = useState([]);
@@ -71,7 +71,8 @@ export default function TodoList() {
             <div className="flex justify-center items-center px-16 py-20 font-bold bg-white max-md:px-5">
                 <div className="flex flex-col mt-5 w-full max-w-[1178px] max-md:max-w-full">
                     <AddToList addTask={handleAddToList} />
-                    <Header /><MyTasks
+                    <Header />
+                    <MyTasks
                          list={list}
                          checkedTasks={checkedTasks}
                          onCheckChange={onCheckChange}
