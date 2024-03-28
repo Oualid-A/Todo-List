@@ -4,10 +4,6 @@ import updateImg from "../assets/update.png";
 
 export default function MyTasks({ list, setNewValue, incrementCount, counter, checkedTasks, onCheckChange, deleteTask, updateTask, editIndex, newValue, setEditIndex }) {
 
-    useEffect(() => {
-        console.log("rendering...");
-    });
-
     const handleEditClick = (index) => {
         if (editIndex === null) {
             setEditIndex(index);
